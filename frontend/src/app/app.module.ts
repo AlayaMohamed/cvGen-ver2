@@ -1,3 +1,5 @@
+import { ContactComponent } from './components/contact/contact.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,6 +13,8 @@ import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptorService } from './services/auth-interceptor.service';
 import { BuilderComponent } from './components/builder/builder.component';
+import { PreviewComponent } from './components/preview/preview.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +24,9 @@ import { BuilderComponent } from './components/builder/builder.component';
     SignupComponent,
     HomeComponent,
     BuilderComponent,
+	DashboardComponent,
+	ContactComponent,
+ PreviewComponent
   ],
   imports: [
     BrowserModule,
